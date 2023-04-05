@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,11 @@ if DEBUG:
 else:
     # GMAIL SETTINGS HERE
     pass
+
+
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51MihqXDydffvia04b7Z239FiNCTeCfPBugq9ml7IibFNtzY9jtTdgxx6oDnzCmYMxKjsB1WM4hwkcABvwp9ZZUJ000XtQ6gS3S'
+STRIPE_SECRET_KEY = 'sk_test_51MihqXDydffvia041j2Lvd52181hIOE2M02rPVlWOWSOHq7ChS72XEdRYaOBZF0DrOaGLLMdCXpdNl5oNuqAPHpn00T7omd8Oy'
+STRIPE_API_VERSION = '2022-11-15'
+STRIPE_WEBHOOK_SECRET = 'whsec_6163e3dab190cde9b56c0ff967abe36ae12e793f0e37887080e45ae1a7ef0f38'
+
+STATIC_ROOT = BASE_DIR / 'static'
