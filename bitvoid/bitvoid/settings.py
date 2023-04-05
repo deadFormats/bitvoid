@@ -131,3 +131,10 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_PNG_URL = 'https://www.freeiconspng.com/img/23492'
 
 CART_SESSION_ID = 'cart'
+
+if DEBUG:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+else:
+    # GMAIL SETTINGS HERE
+    pass
